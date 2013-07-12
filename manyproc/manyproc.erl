@@ -23,5 +23,4 @@ start_proc(HowManyMore, Pid) ->
     %% Wait until we receive an 'ok' message (from our parent).
     receive ok ->
 	    ok
-    end,
-    erlang:display("Done").
+    end.
