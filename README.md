@@ -1,7 +1,7 @@
 Erlang in two hours: a hands-on workshop
 ===============
 
-Resources for the hands-on Erlang workshop presented at Codestock 2013 in Knoxville, TN, USA.
+Resources for the hands-on Erlang workshop presented at Baksia in Oslo, Norway on June 3, 2014.
 
 
 Abstract:
@@ -16,11 +16,13 @@ In this session you will learn the foundations of Erlang, set up a dev environme
 
 You won't leave the session an Erlang expert, but you'll have a great head start.
 
-[*] I will be running on Windows, but you'll be fine with Mac or Linux.
+[*] I will be running on Mac, but you'll be fine with Windows or Linux.
 
 
 Steps
 -----
+
+* **shell** : Play with types and matching.
 
 * **hello** :  A simple milestone  to make sure you have an environment set up to build and run Erlang.
 
@@ -31,6 +33,8 @@ Steps
 * **ssslow** : Demo to show off 'eprof' the built-in performance profiler.
 
 * **hotload** : Demo to show off hotcode loading
+
+* **shell** : Play with multiple nodes.
 
 * **manyproc** : Demo of lightweight Erlang processes
 

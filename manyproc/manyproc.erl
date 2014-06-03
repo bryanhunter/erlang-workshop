@@ -9,12 +9,12 @@ start_and_time(HowMany)->
 start(HowMany) ->
     start_proc(HowMany, self()).
 
-start_proc(0, Pid) -> 
+start_proc(0, Pid) ->
     Pid ! ok; % Last one. Send an 'ok' to the first Pid in the chain.
 start_proc(HowManyMore, Pid) ->
     %% Create a child process that runs start_proc (this function)
-    NewPid = spawn(?MODULE, 
-		   start_proc, 
+    NewPid = spawn(?MODULE,
+		   start_proc,
 		   [HowManyMore-1, Pid]), % decrementing HowMany
 
     %% Send an 'ok' message to the child process

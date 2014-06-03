@@ -6,18 +6,12 @@ start() ->
     spawn(?MODULE, loop, [1]).
 
 loop(Count) ->
-    receive  
+    receive
 	done ->
 	    io:format("Closing~n", []),
 	    ok
     after 2000 ->
-	    io:format("Loop ~p on ~p says hello.~n", 
+	    io:format("Loop #~p on node [~p] says hello.~n",
 		      [node(), Count]),
 	    ?MODULE:loop(Count+1)
     end.
-
-
-
-
-
-%% cd('c:/code/IntroToErlangTalk/hotload').
